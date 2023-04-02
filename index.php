@@ -45,10 +45,10 @@ $sql->execute();
 
 $fetchUsers = $sql->fetchall();
 //exibe a tabela
-echo '<table>';
+echo '<table style="width: 800px;">';
 echo '<tr><th>ID</th><th>Name</th><th>Email</th><th>Access</th></tr>';
 foreach ($fetchUsers as $key => $value) {
-    echo '<tr>';
+    echo '<tr style="width: 800px;">';
     echo  '<td>'.$value['id'].'</td>';
     echo  '<td>'.$value['name'].'</td>';
     echo  '<td>'.$value['email'].'</td>';
